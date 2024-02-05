@@ -90,7 +90,7 @@ legend {
 
 :root {
   --text: #0d1a10;
-  --background: #f6faf6;
+  --background: #e9f3e9;
   --primary: #62ad72;
   --secondary: #a6c8d0;
   --accent: #849ebf;
@@ -119,6 +119,7 @@ html, body {
 }
 
 .nav__logo {
+  justify-self: start;
   font-weight: 800;
   font-size: 32px;
   text-transform: capitalize;
@@ -168,16 +169,19 @@ html, body {
 }
 
 .btn {
-  padding: 0.75em 2em;
-  font-size: 1.2rem;
+  padding: 1em 2em;
   background-color: var(--primary);
   border-radius: 16px;
-  white-space: nowrap;
+  -webkit-transition: -webkit-transform ease 0.2s, -webkit-box-shadow ease 0.2s;
+  transition: -webkit-transform ease 0.2s, -webkit-box-shadow ease 0.2s;
+  transition: transform ease 0.2s, box-shadow ease 0.2s;
+  transition: transform ease 0.2s, box-shadow ease 0.2s, -webkit-transform ease 0.2s, -webkit-box-shadow ease 0.2s;
+  display: inline-block;
 }
 
 .btn:hover {
-  -webkit-transform: scale(1.2, 1.2);
-          transform: scale(1.2, 1.2);
-  -webkit-box-shadow: 0px 20px 80px -20px var(--primary);
-          box-shadow: 0px 20px 80px -20px var(--primary);
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
+  -webkit-box-shadow: 0 20px 80px -10px var(--primary);
+          box-shadow: 0 20px 80px -10px var(--primary);
 }/*# sourceMappingURL=main.css.map */

@@ -1,16 +1,13 @@
-.montserrat-<uniquifier> {
+h1,
+p {
   font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
   font-weight: 900;
   font-style: normal;
-}
-
-h1, p {
-  text-align: center;
-  font-size: 200%;
-  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  color: #0d1a10;
 }
 
 body {
-    background-color: #f6faf6;
-  }
+  background-color: #f6faf6;
+  text-align: center;
+}

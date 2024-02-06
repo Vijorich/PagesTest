@@ -88,17 +88,26 @@ legend {
   display: block;
 }
 
-:root {
-  --text: #164120;
-  --background: #e9f3e9;
-  --primary: #62ad72;
-  --secondary: #a6c8d0;
-  --accent: #849ebf;
-  --font-main: "Montserrat", sans-serif;
+@media (prefers-color-scheme: light) {
+  :root {
+    --text: #0c270c;
+    --background: #e6f9e6;
+    --primary: #4db350;
+    --secondary: #4ad34a;
+    --accent: #01d001;
+  }
 }
-
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text: #daf3da;
+    --background: #061906;
+    --primary: #4db350;
+    --secondary: #2cb52c;
+    --accent: #2ffe2f;
+  }
+}
 html, body {
-  font-family: var(--font-main);
+  font-family: "Montserrat", sans-serif;
   color: var(--text);
   background-color: var(--background);
 }

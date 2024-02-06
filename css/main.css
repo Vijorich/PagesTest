@@ -89,7 +89,7 @@ legend {
 }
 
 :root {
-  --text: #0d1a10;
+  --text: #164120;
   --background: #e9f3e9;
   --primary: #62ad72;
   --secondary: #a6c8d0;
@@ -104,8 +104,8 @@ html, body {
 }
 
 .container {
-  max-width: 1310px;
-  padding: 0 15px;
+  max-width: 1470px;
+  padding: 0 28px;
   margin: 0 auto;
 }
 
@@ -119,7 +119,7 @@ html, body {
 }
 
 .nav__logo {
-  justify-self: start;
+  justify-self: end;
   font-weight: 800;
   font-size: 32px;
   text-transform: capitalize;
@@ -143,7 +143,7 @@ html, body {
 }
 
 .header__nav {
-  margin-bottom: 80px;
+  margin-bottom: 40px;
 }
 
 .header__content {
@@ -151,16 +151,16 @@ html, body {
 }
 
 .header_title {
-  margin-bottom: 16px;
-  font-size: 80px;
+  margin-bottom: 20px;
+  font-size: xx-large;
   font-weight: 800;
   line-height: 130%;
   text-transform: capitalize;
 }
 
 .header__content p {
-  font-size: 24px;
-  font-weight: 400;
+  font-size: large;
+  font-weight: 600;
   line-height: 160%;
 }
 
@@ -169,19 +169,91 @@ html, body {
 }
 
 .btn {
-  padding: 1em 2em;
+  padding: 1rem 2rem;
   background-color: var(--primary);
-  border-radius: 16px;
-  -webkit-transition: -webkit-transform ease 0.2s, -webkit-box-shadow ease 0.2s;
-  transition: -webkit-transform ease 0.2s, -webkit-box-shadow ease 0.2s;
-  transition: transform ease 0.2s, box-shadow ease 0.2s;
-  transition: transform ease 0.2s, box-shadow ease 0.2s, -webkit-transform ease 0.2s, -webkit-box-shadow ease 0.2s;
-  display: inline-block;
+  border-radius: 100px;
+  display: inline;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-.btn:hover {
+.header__card {
+  margin-top: 100px;
+}
+
+.card {
+  width: 100%;
+  height: 60vmin;
+  max-height: 400px;
+  min-width: 400px;
+  border-radius: 36px;
+  background-color: var(--primary);
+  -webkit-transition: -webkit-transform ease-out 0.2s, -webkit-box-shadow ease-out 0.2s;
+  transition: -webkit-transform ease-out 0.2s, -webkit-box-shadow ease-out 0.2s;
+  transition: transform ease-out 0.2s, box-shadow ease-out 0.2s;
+  transition: transform ease-out 0.2s, box-shadow ease-out 0.2s, -webkit-transform ease-out 0.2s, -webkit-box-shadow ease-out 0.2s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.card__content {
+  border-radius: 36px;
+  width: 100%;
+  height: 100%;
+  padding: 36px;
+  text-align: start;
+  font-weight: 800;
+  font-size: xx-large;
+}
+
+.card:hover {
   -webkit-transform: scale(1.01);
           transform: scale(1.01);
-  -webkit-box-shadow: 0 20px 80px -10px var(--primary);
-          box-shadow: 0 20px 80px -10px var(--primary);
+  -webkit-box-shadow: 0 20px 80px 0px var(--primary);
+          box-shadow: 0 20px 80px 0px var(--primary);
+}
+
+.header__card {
+  gap: 24px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: auto;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 48px;
+}
+
+.footer__author {
+  font-weight: 600;
+}
+
+.footer__link {
+  font-weight: 800;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*=header__card] {
+    display: grid;
+  }
 }/*# sourceMappingURL=main.css.map */

@@ -118,6 +118,16 @@ html, body {
   margin: 0 auto;
 }
 
+::-moz-selection {
+  background: var(--secondary);
+  color: var(--text);
+}
+
+::selection {
+  background: var(--secondary);
+  color: var(--text);
+}
+
 .nav {
   display: grid;
   grid-template-columns: 2fr 8fr 2fr;
@@ -258,4 +268,4 @@ html, body {
   [class*=header__card] {
     display: grid;
   }
-}/*# sourceMappingURL=main.css.map */
+}

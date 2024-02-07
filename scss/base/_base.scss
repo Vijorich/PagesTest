@@ -1,15 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-html, body {
-    font-family: "Montserrat", sans-serif;
-    color: var(--text);
-    background-color: var(--background);
+html,
+body {
+  font-family: "Montserrat", sans-serif;
+  color: var(--text);
+  background-color: var(--background);
 }
 
 .container {
-    max-width: 1470px;
-    padding: 0 28px;
-    margin: 0 auto;
+  max-width: 1470px;
+  padding: 0 28px;
+  margin: 0 auto;
 }
 
 ::-moz-selection {

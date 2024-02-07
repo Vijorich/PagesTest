@@ -14,7 +14,9 @@
 }
 
 /* Links */
-a, a:link, a:visited {
+a,
+a:link,
+a:visited {
   text-decoration: none;
 }
 
@@ -23,16 +25,28 @@ a:hover {
 }
 
 /* Common */
-aside, nav, footer, header, section, main {
+aside,
+nav,
+footer,
+header,
+section,
+main {
   display: block;
 }
 
-h1, h2, h3, h4, h5, h6, p {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
   font-size: inherit;
   font-weight: inherit;
 }
 
-ul, ul li {
+ul,
+ul li {
   list-style: none;
 }
 
@@ -40,7 +54,8 @@ img {
   vertical-align: top;
 }
 
-img, svg {
+img,
+svg {
   max-width: 100%;
   height: auto;
 }
@@ -50,7 +65,10 @@ address {
 }
 
 /* Form */
-input, textarea, button, select {
+input,
+textarea,
+button,
+select {
   font-family: inherit;
   font-size: inherit;
   color: inherit;
@@ -61,7 +79,8 @@ input::-ms-clear {
   display: none;
 }
 
-button, input[type=submit] {
+button,
+input[type=submit] {
   display: inline-block;
   -webkit-box-shadow: none;
           box-shadow: none;
@@ -70,8 +89,10 @@ button, input[type=submit] {
   cursor: pointer;
 }
 
-input:focus, input:active,
-button:focus, button:active {
+input:focus,
+input:active,
+button:focus,
+button:active {
   outline: none;
 }
 
@@ -106,7 +127,8 @@ legend {
     --accent: #2ffe2f;
   }
 }
-html, body {
+html,
+body {
   font-family: "Montserrat", sans-serif;
   color: var(--text);
   background-color: var(--background);
@@ -142,6 +164,32 @@ html, body {
   font-weight: 800;
   font-size: 32px;
   text-transform: capitalize;
+}
+
+.details__head {
+  margin-top: 40px;
+}
+
+details > summary {
+  padding: 16px 16px 16px 32px;
+  width: auto;
+  background-color: var(--primary);
+  list-style: none;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+  font-weight: 800;
+  border-radius: 100px;
+  -webkit-transition: height 1s ease;
+  transition: height 1s ease;
+}
+
+details > p {
+  background-color: var(--primary);
+  padding: 36px 32px 32px 32px;
+  margin: -30px 0px 0px 0px;
+  border-radius: 0px 0px 2rem 2rem;
+  font-weight: 600;
 }
 
 .nav-list {
@@ -268,4 +316,4 @@ html, body {
   [class*=header__card] {
     display: grid;
   }
-}
+}/*# sourceMappingURL=main.css.map */

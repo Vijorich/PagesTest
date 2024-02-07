@@ -1,27 +1,29 @@
 $themes: (
- light: (
-   text: #0c270c,
-   background: #e6f9e6,
-   primary: #4db350,
-   secondary: #4ad34a,
-   accent: #01d001,
- ),
- dark: (
-   text: #daf3da,
-   background: #061906,
-   primary: #4db350,
-   secondary: #2cb52c,
-   accent: #2ffe2f,
- ),
+  light: (
+    text: #0c270c,
+    background: #e6f9e6,
+    primary: #4db350,
+    secondary: #4ad34a,
+    accent: #01d001,
+  ),
+  dark: (
+    text: #daf3da,
+    background: #061906,
+    primary: #4db350,
+    secondary: #2cb52c,
+    accent: #2ffe2f,
+  ),
 );
 
-@each $name, $map in $themes {
-    @media (prefers-color-scheme: #{$name}) {
-        :root {
-            @each $key,
-            $value in $map {
-                --#{$key}: #{$value};
-            }
-        }
+@each $name,
+$map in $themes {
+  @media (prefers-color-scheme: #{$name}) {
+    :root {
+
+      @each $key,
+      $value in $map {
+        --#{$key}: #{$value};
+      }
     }
+  }
 }

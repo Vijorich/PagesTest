@@ -13,9 +13,11 @@ html, body {
 }
 
 ::-moz-selection {
-  background: #9bcc29;
+  background: var(--secondary);
+  color: var(--text);
 }
 
 ::selection {
-  background: #9bcc29;
+  background: var(--secondary);
+  color: var(--text);
 }

@@ -9,7 +9,8 @@
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 /* Links */
@@ -62,7 +63,8 @@ input::-ms-clear {
 
 button, input[type=submit] {
   display: inline-block;
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
   background-color: transparent;
   background: none;
   cursor: pointer;
@@ -130,7 +132,9 @@ html, body {
   display: grid;
   grid-template-columns: 2fr 8fr 2fr;
   gap: 20px;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .nav__logo {
@@ -142,6 +146,8 @@ html, body {
 
 .nav-list {
   justify-self: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 64px;
   font-weight: 600;
@@ -186,7 +192,10 @@ html, body {
   background-color: var(--primary);
   border-radius: 100px;
   display: inline;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .header__card {
@@ -200,7 +209,10 @@ html, body {
   max-height: 400px;
   border-radius: 36px;
   background-color: var(--primary);
+  -webkit-transition: -webkit-transform ease-out 0.2s, -webkit-box-shadow ease-out 0.2s;
+  transition: -webkit-transform ease-out 0.2s, -webkit-box-shadow ease-out 0.2s;
   transition: transform ease-out 0.2s, box-shadow ease-out 0.2s;
+  transition: transform ease-out 0.2s, box-shadow ease-out 0.2s, -webkit-transform ease-out 0.2s, -webkit-box-shadow ease-out 0.2s;
 }
 
 .card__content {
@@ -214,22 +226,32 @@ html, body {
 }
 
 .card:hover {
-  transform: scale(1.01);
-  box-shadow: 0 20px 80px 0px var(--primary);
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
+  -webkit-box-shadow: 0 20px 80px 0px var(--primary);
+          box-shadow: 0 20px 80px 0px var(--primary);
 }
 
 .header__card {
   gap: 24px;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
 .footer__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-top: auto;
   width: 100%;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 48px;
 }
 
@@ -246,4 +268,4 @@ html, body {
   [class*=header__card] {
     display: grid;
   }
-}/*# sourceMappingURL=main.css.map */
+}

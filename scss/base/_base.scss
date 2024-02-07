@@ -11,3 +11,11 @@ html, body {
     padding: 0 28px;
     margin: 0 auto;
 }
+
+::-moz-selection {
+  background: #9bcc29;
+}
+
+::selection {
+  background: #9bcc29;
+}

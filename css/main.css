@@ -321,13 +321,14 @@ details p {
   font-size: xx-large;
 }
 
-.card:hover {
-  -webkit-transform: scale(1.01);
-          transform: scale(1.01);
-  -webkit-box-shadow: 0 20px 80px 0px var(--primary);
-          box-shadow: 0 20px 80px 0px var(--primary);
+@media (any-hover: hover) {
+  .card:hover {
+    -webkit-transform: scale(1.01);
+            transform: scale(1.01);
+    -webkit-box-shadow: 0 20px 80px 0px var(--primary);
+            box-shadow: 0 20px 80px 0px var(--primary);
+  }
 }
-
 .header__card {
   gap: 24px;
   width: 100%;
